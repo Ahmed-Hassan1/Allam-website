@@ -1,0 +1,756 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gill Sans", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+iframe {
+    border: none;
+    margin-top: 10%;
+}
+
+::selection {
+    background-color: goldenrod;
+    color: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #ffffff;
+    height: 70px;
+    padding: 20px;
+
+}
+
+header button {
+    display: none;
+}
+
+.dropdown-menu2 {
+    position: absolute;
+    background-color: white;
+    border-radius: 8px;
+    padding: 8px 0;
+    display: block;
+    transition: all 0.3s ease;
+    margin-top: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 360px;
+    right: 10%;
+    text-align: center;
+    left: 10%;
+    width: 80%;
+    text-transform: uppercase;
+    font-size: 20px;
+
+}
+
+.dropdown-menu2 a {
+    color: #333;
+    padding: 12px 20px;
+    display: block;
+    background-color: #e4e4e4;
+    margin: 10px 15px 10px 15px;
+    transition: background-color 0.3s;
+    border-radius: 3px;
+}
+
+nav {
+    width: 70%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav a {
+    color: rgb(136, 98, 3);
+    font-size: 16px;
+    transition: opacity 0.3s;
+    text-wrap: nowrap;
+}
+
+nav a:active {
+    background-color: #444;
+    transform: scale(0.98);
+}
+
+nav a:hover {
+    color: black;
+}
+
+nav a>li {
+    position: relative;
+}
+
+.logo {
+    width: 100px;
+    height: 115px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    min-width: 200px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 8px 0;
+    opacity: 0;
+    display: none;
+    transition: all 0.3s ease;
+    margin-top: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 0;
+
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    display: block;
+}
+
+.dropdown-menu a {
+    color: #333;
+    padding: 12px 20px;
+    display: block;
+    background-color: #e4e4e4;
+    margin: 10px 15px 10px 15px;
+    transition: background-color 0.3s;
+    border-radius: 3px;
+}
+
+.dropdown-menu a:hover {
+    background-color: #e0e0e0;
+
+}
+
+.dropdown-trigger::after {
+    content: "▼";
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 10px;
+    transition: transform 0.3s;
+}
+
+.dropdown:hover .dropdown-trigger::after {
+    transform: rotate(180deg);
+}
+
+
+.main-section {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.background-image1 {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.h1-div {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 40px;
+
+}
+
+.h1-anim {
+    animation: h1-animation 2s;
+}
+
+@keyframes h1-animation {
+    100% {
+        transform: translate(0, 0);
+    }
+
+    0% {
+        transform: translate(0, 100px);
+    }
+}
+
+h1 {
+    color: red;
+    font-size: 3em;
+    margin: 0.67em 0;
+    font-weight: bold;
+}
+
+.vedio-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    background-color: white;
+    padding: 25px;
+}
+
+.vedio-section div {
+    width: 60%;
+}
+
+.vedio-section div>p {
+    letter-spacing: 1px;
+    line-height: 30px;
+    margin-bottom: 25px;
+}
+
+.transparent-section {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vw;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('image/import-export-registration.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+
+
+
+.our-client {
+    text-align: center;
+    background-color: white;
+}
+
+.our-client {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.client {
+    margin: 50px;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fdf1d5;
+}
+
+.footer {
+    width: 100%;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 0 20px 20px 30px;
+}
+
+.footer img {
+    height: 350px;
+}
+
+.social-footer {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-titel {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.social-section-footer {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social-section-footer img {
+    width: 30px;
+    height: 30px;
+}
+
+hr {
+    color: black;
+    width: 80%;
+}
+
+.background-image2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('image/vision-mission-business-development-strategy-concept-virtual-screen_820340-52874.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.transparent-section2 {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45vw;
+}
+
+.vision {
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.vision-div {
+    width: 80%;
+}
+
+h3 {
+    padding: 40px 30px 40px 0;
+}
+
+.vision p {
+    line-height: 30px;
+    font-size: 20px;
+    margin-bottom: 45px;
+}
+
+.background-image3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url("image/360_F_519819425_xgW3SoStxkZJMMXCRxHvM4qwA7Nm19Xe.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.transparent-section3 {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45vw;
+}
+
+.background-image4 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url("image/AdobeStock_416319170-scaled-e1663073836763.jpeg");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.transparent-section4 {
+    background-color: rgba(0, 0, 0, 0.459);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45vw;
+}
+
+.vision-div li {
+    list-style-type: circle;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.vision-div-p {
+    padding-left: 50px;
+    margin: 10px;
+}
+
+.core-values {
+    color: red;
+    margin-bottom: 20px;
+}
+
+.background-image5 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url("image/360_F_898029870_3CJNuIW3bwZN34SaOHO3zSJGJc2JM9Va (1).jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.transparent-section5 {
+    background-color: rgba(0, 0, 0, 0.459);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45vw;
+}
+
+.Commitment {
+    list-style-type: circle;
+    font-size: 13px;
+    padding-left: 36px;
+    margin: 40px;
+}
+
+.Commitment-div h3 {
+    color: red;
+    margin-bottom: 20px;
+    margin-left: 70px;
+}
+
+.contact-us {
+    padding-top: 20px;
+    padding-left: 100px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    font-weight: 500;
+    background-color: white;
+}
+
+.contact-us-titel {
+    color: red;
+    font-weight: bold;
+    margin-left: -20px;
+    font-size: 20px;
+    padding: 10px 0 10px 0;
+}
+
+.background-image6 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url("image/prostratus-contact-us.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.transparent-section6 {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 51vw;
+}
+
+.elementor-custom-embed {
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+
+    padding-bottom: 50px;
+}
+
+.elementor-custom-embed iframe {
+    width: 100%;
+    height: 80%;
+    border: 0;
+    margin: 0;
+}
+
+.elementor-widget-wrap {
+    background-color: white;
+}
+
+.background-image7 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url("image/How-do-I-check-if-a-company-is-in-MCA.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.transparent-section7 {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vw;
+}
+
+.chairman {
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 50px;
+    gap: 70px;
+}
+
+.chairman img {
+    width: 300px;
+    height: 250px;
+}
+
+.chairman h2 {
+    color: red;
+    margin-bottom: 15px;
+}
+
+.chairman p {
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.History {
+    background-color: white;
+    padding: 20px 45px 40px 45px;
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+
+.History-div h3 {
+    color: red;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px;
+    padding: 32px;
+}
+
+.grid .card:last-child {
+    grid-column: 1 / 3;
+    justify-self: center;
+    width: 48%;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: visible;
+    transition: all 0.3s ease;
+    position: relative;
+    height: 400px;
+    margin-bottom: 32px;
+
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    background-color: #ddd;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.sticker {
+    position: absolute;
+    bottom: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: goldenrod;
+    color: #333;
+    padding: 12px 24px;
+    border-radius: 50px;
+    min-width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 2px solid #eee;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.card:hover .sticker {
+    background-color: white;
+    border: 5px solid goldenrod;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    header button {
+        width: 80px;
+        height: 40px;
+        background-color: #d1a842;
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+        border: none;
+        display: block;
+    }
+
+    header {
+        padding: 15px;
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 90px;
+        height: 100px;
+        margin-left: -15px;
+    }
+
+    h1 {
+        font-size: 2em;
+        text-wrap: nowrap;
+    }
+
+    .vedio-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .vedio-section div {
+        width: 100%;
+    }
+
+    .vedio-section div>p {
+        line-height: 25px;
+        margin-bottom: 20px;
+    }
+
+    .transparent-section {
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vw;
+    }
+
+    .background-image {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-image: url('image/import-export-registration.jpg');
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+    }
+
+    footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fdf1d5;
+    }
+
+    .footer {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .social-section-footer {
+        margin-left: -245px;
+    }
+
+    .transparent-section2 {
+        height: 150vw;
+    }
+
+    .transparent-section3 {
+        height: 150vw;
+    }
+
+    .background-image3 {
+        height: 60vh;
+    }
+
+    .transparent-section4 {
+        height: 135vw;
+    }
+
+    .background-image5 {
+        height: 76vh;
+    }
+
+    .transparent-section5 {
+        height: 135vw;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        padding: 32px;
+    }
+
+    .grid .card:last-child {
+        width: 100%;
+    }
+
+    .chairman {
+        flex-direction: column;
+    }
+
+    .background-image7 {
+        height: 76vh;
+    }
+
+    .transparent-section7 {
+        height: 135vw;
+    }
+
+    .background-image6 {
+        height: 76vh;
+    }
+
+    .transparent-section6 {
+        height: 135vw;
+    }
+}
+
+@media screen and (max-width: 1200px) {}
