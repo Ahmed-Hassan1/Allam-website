@@ -10,30 +10,52 @@
 </head>
 
 <body>
-    <header>
-        <img class="logo" src="image/logo-transparent.png" alt="">
-        <button>menu</button>
-        <nav>
-            <a href="index.html">Home</a>
+    <div id="loading-screen">
+        <div class="logo-container">
+            <img src="image/logo-transparent.png" alt="" class="logo2">
+        </div>
+        <div class="div-top"></div>
+        <div class="div-bottom"></div>
+    </div>
+    <div id="main-content">
+        <header>
+            <img class="logo" src="image/logo-transparent.png" alt="">
+            <button id="dropdownButton">menu</button>
+            <ul id="dropdownMenu2" class="dropdown-menu2">
+                <li><a href="index.html">home</a></li>
+                <li class="has-submenu" id="vision"><a href="#" class="after">vision&mission</a>
+                    <ul class="submenu" id="vision-submenu">
+                        <li><a href="vision.html">Vision</a></li>
+                        <li><a href="mission.html">Mission</a></li>
+                        <li><a href="Core Values.html"> Our Core Values</a></li>
+                        <li><a href="Commitment.html">Our Commitment</a></li>
+                    </ul>
+                </li>
+                <li><a href="product.html"> products</a></li>
+                <li><a href="contact us.html">Contact Us</a></li>
+                <li><a href="about us.html">about Us</a></li>
+            </ul>
+            <nav>
+                <a href="index.html">Home</a>
 
-            <div class="dropdown">
-                <a href="" class="dropdown-trigger">
-                    vision&mission
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="vision.html">Vision</a></li>
-                    <li><a href="mission.html">Mission</a></li>
-                    <li><a href="Core Values.html"> Our Core Values</a></li>
-                    <li><a href="Commitment.html">Our Commitment</a></li>
-                </ul>
-            </div>
-            <a href="product.html">products</a>
-            <a href="about us.html">about us</a>
-            <a href="contact us.html">Contact Us</a>
+                <div class="dropdown">
+                    <a href="#" class="dropdown-trigger ">
+                        vision&mission
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="vision.html">Vision</a></li>
+                        <li><a href="mission.html">Mission</a></li>
+                        <li><a href="Core Values.html"> Our Core Values</a></li>
+                        <li><a href="Commitment.html">Our Commitment</a></li>
+                    </ul>
+                </div>
+                <a href="product.html">products</a>
+                <a href="about us.html">about us</a>
+                <a href="contact us.html">Contact Us</a>
 
 
-        </nav>
-        <!-- <a href="" class="language"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+            </nav>
+            <!-- <a href="" class="language"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
                 <path fill="#fff" d="M1 11H31V21H1z"></path>
                 <path d="M5,4H27c2.208,0,4,1.792,4,4v4H1V8c0-2.208,1.792-4,4-4Z" fill="#be2a2c"></path>
                 <path d="M5,20H27c2.208,0,4,1.792,4,4v4H1v-4c0-2.208,1.792-4,4-4Z" transform="rotate(180 16 24)"></path>
@@ -51,78 +73,81 @@
                     d="M27,5H5c-1.657,0-3,1.343-3,3v1c0-1.657,1.343-3,3-3H27c1.657,0,3,1.343,3,3v-1c0-1.657-1.343-3-3-3Z"
                     fill="#fff" opacity=".2"></path>
             </svg></a> -->
-    </header>
-    <div class="background-image5"></div>
-    <section class="section transparent-section5"></section>
-    <section class="vision">
-        <div class="Commitment-div">
-            <h3 class="core-values"><i class="fa-regular fa-eye" style="color: #000000;"></i>Our Commitment to you as a
-                customer :</h3>
-            <li class="Commitment"> Providing team of experiences who will ensure the
-                services
-                which you need expediently, safety with full visibility to you.</li>
-            <li class="Commitment"> Appreciating your values business and working tirelessly
-                to provide you a customized solution to meet your business needs at a competitive price</li>
-            <li class="Commitment"> Utilizing our full network, assets and our unique
-                domestic
-                transportation offers to provide you creative solutions from door to door.</li>
-            <li class="Commitment"> Treating you as a valued customer regardless of your size
-                or needs.</li>
-        </div>
-    </section>
-    <footer>
-        <div class="footer">
-            <img src="image/logo-transparent.png" alt="">
-            <div class="social-footer">
-                <div>
-                    <p class="footer-titel"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
-                            viewBox="0 0 24 24" style="fill: rgb(51, 51, 51);transform: msFilter ">
-                            <path
-                                d="m12 17 1-2V9.858c1.721-.447 3-2 3-3.858 0-2.206-1.794-4-4-4S8 3.794 8 6c0 1.858 1.279 3.411 3 3.858V15l1 2z">
-                            </path>
-                            <path
-                                d="m16.267 10.563-.533 1.928C18.325 13.207 20 14.584 20 16c0 1.892-3.285 4-8 4s-8-2.108-8-4c0-1.416 1.675-2.793 4.267-3.51l-.533-1.928C4.197 11.54 2 13.623 2 16c0 3.364 4.393 6 10 6s10-2.636 10-6c0-2.377-2.197-4.46-5.733-5.437z">
-                            </path>
-                        </svg> Head Office :</p>
-                    <p> 10 Mohamed Masoud St. Wabour El Meyah, Bab <br> Sharqi, Alexandria – Egypt</p>
+        </header>
+        <div class="background-image5"></div>
+        <section class="section transparent-section5"></section>
+        <section class="vision">
+            <div class="Commitment-div">
+                <h3 class="core-values"><i class="fa-regular fa-eye" style="color: #000000;"></i>Our Commitment to you
+                    as a
+                    customer :</h3>
+                <li class="Commitment"> Providing team of experiences who will ensure the
+                    services
+                    which you need expediently, safety with full visibility to you.</li>
+                <li class="Commitment"> Appreciating your values business and working tirelessly
+                    to provide you a customized solution to meet your business needs at a competitive price</li>
+                <li class="Commitment"> Utilizing our full network, assets and our unique
+                    domestic
+                    transportation offers to provide you creative solutions from door to door.</li>
+                <li class="Commitment"> Treating you as a valued customer regardless of your size
+                    or needs.</li>
+            </div>
+        </section>
+        <footer>
+            <div class="footer">
+                <img src="image/logo-transparent.png" alt="">
+                <div class="social-footer">
+                    <div>
+                        <p class="footer-titel"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                viewBox="0 0 24 24" style="fill: rgb(51, 51, 51);transform: msFilter ">
+                                <path
+                                    d="m12 17 1-2V9.858c1.721-.447 3-2 3-3.858 0-2.206-1.794-4-4-4S8 3.794 8 6c0 1.858 1.279 3.411 3 3.858V15l1 2z">
+                                </path>
+                                <path
+                                    d="m16.267 10.563-.533 1.928C18.325 13.207 20 14.584 20 16c0 1.892-3.285 4-8 4s-8-2.108-8-4c0-1.416 1.675-2.793 4.267-3.51l-.533-1.928C4.197 11.54 2 13.623 2 16c0 3.364 4.393 6 10 6s10-2.636 10-6c0-2.377-2.197-4.46-5.733-5.437z">
+                                </path>
+                            </svg> Head Office :</p>
+                        <p> 10 Mohamed Masoud St. Wabour El Meyah, Bab <br> Sharqi, Alexandria – Egypt</p>
+                    </div>
+                    <div>
+                        <p class="footer-titel"> ☏ Tel. :</p>
+                        <p>( +203 ) 4262714 – 4299146</p>
+                    </div>
+                    <div>
+                        <p class="footer-titel"> 🖷 Fax :</p>
+                        <p>(+203) 4299148</p>
+                    </div>
+                    <div>
+                        <p class="footer-titel"> 🖅 Email :</p>
+                        <p> tsc@triumphsc.org</p>
+                    </div>
                 </div>
-                <div>
-                    <p class="footer-titel"> ☏ Tel. :</p>
-                    <p>( +203 ) 4262714 – 4299146</p>
-                </div>
-                <div>
-                    <p class="footer-titel"> 🖷 Fax :</p>
-                    <p>(+203) 4299148</p>
-                </div>
-                <div>
-                    <p class="footer-titel"> 🖅 Email :</p>
-                    <p> tsc@triumphsc.org</p>
+                <div class="social-section-footer">
+                    <div class="head-text-footer">Follow_Us :-</div>
+                    <p><img loading="lazy" class="alignnone size-full wp-image-378"
+                            src="https://triumphsc.org/wp-content/uploads/2019/03/linked-In-icon-e1552003455924.png"
+                            alt="" width="20" height="20"> <a href="https://www.facebook.com/triumphShippingCo"><img
+                                loading="lazy" class="alignnone wp-image-377 size-full"
+                                src="https://triumphsc.org/wp-content/uploads/2019/03/facebook-icon-e1552003447989.png"
+                                alt="" width="20" height="20"></a> <a
+                            href="https://www.youtube.com/channel/UCf13VVf8LMIeGYZPTwts4rw"><img loading="lazy"
+                                class="alignnone size-full wp-image-379"
+                                src="https://triumphsc.org/wp-content/uploads/2019/03/youtube-icon-e1552003439872.png"
+                                alt="" width="20" height="20"></a></p>
+                    <div class="head-text-footer">Share Site :</div>
+                    <div><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//triumphsc.org/"><img
+                                loading="lazy" class="share-icon-footer wp-image-380 size-full alignnone"
+                                src="https://triumphsc.org/wp-content/uploads/2019/03/share-icon-e1552004784536.png"
+                                alt="" width="20" height="20"></a></div>
                 </div>
             </div>
-            <div class="social-section-footer">
-                <div class="head-text-footer">Follow_Us :-</div>
-                <p><img loading="lazy" class="alignnone size-full wp-image-378"
-                        src="https://triumphsc.org/wp-content/uploads/2019/03/linked-In-icon-e1552003455924.png" alt=""
-                        width="20" height="20"> <a href="https://www.facebook.com/triumphShippingCo"><img loading="lazy"
-                            class="alignnone wp-image-377 size-full"
-                            src="https://triumphsc.org/wp-content/uploads/2019/03/facebook-icon-e1552003447989.png"
-                            alt="" width="20" height="20"></a> <a
-                        href="https://www.youtube.com/channel/UCf13VVf8LMIeGYZPTwts4rw"><img loading="lazy"
-                            class="alignnone size-full wp-image-379"
-                            src="https://triumphsc.org/wp-content/uploads/2019/03/youtube-icon-e1552003439872.png"
-                            alt="" width="20" height="20"></a></p>
-                <div class="head-text-footer">Share Site :</div>
-                <div><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//triumphsc.org/"><img loading="lazy"
-                            class="share-icon-footer wp-image-380 size-full alignnone"
-                            src="https://triumphsc.org/wp-content/uploads/2019/03/share-icon-e1552004784536.png" alt=""
-                            width="20" height="20"></a></div>
+            <div style="width: 80%; text-align: center;">
+                <p style="border-top: solid 1px black; margin-bottom: 5px; padding-top: 5px;">All Rights Reserved 2019
+                </p>
             </div>
-        </div>
-        <div style="width: 80%; text-align: center;">
-            <p style="border-top: solid 1px black; margin-bottom: 5px; padding-top: 5px;">All Rights Reserved 2019
-            </p>
-        </div>
-    </footer>
+        </footer>
+    </div>
+    <script src="main.js"></script>
 </body>
 
 </html>
