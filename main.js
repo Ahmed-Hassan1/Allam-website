@@ -56,8 +56,8 @@ var flkty = new Flickity(elem, {
     autoPlay: 2500,
 });
 
-var elem = document.querySelector('.main-carousel-2');
-var flkty = new Flickity(elem, {
+var elem2 = document.querySelector('.main-carousel-2');
+var flkty = new Flickity(elem2, {
     // options
     cellAlign: 'center',
     contain: true,
